@@ -1,6 +1,7 @@
 package org.usfirst.frc.team3218.robot.subsystems;
 
 import org.usfirst.frc.team3218.robot.RobotMap;
+import org.usfirst.frc.team3218.robot.chassis.commands.DriveWithXbox;
 
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 
@@ -31,6 +32,7 @@ public class Chassis extends Subsystem {
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
+    	setDefaultCommand(new DriveWithXbox());
     }
 
 
